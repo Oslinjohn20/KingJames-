@@ -1,0 +1,215 @@
+body {
+  background-color: #201728;
+  margin: 0;
+  padding: 0;
+}
+
+.top-box {
+  background-image: url("../kjd-assets/hearo-top.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 120vh;
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 92%);
+}
+
+.top-box .heading {
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.top-box .move_icon {
+  color: white;
+  margin-left: 98%;
+  margin-top: 1%;
+}
+
+.top-box .white_arrow {
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.box_two {
+  background-color: #70259b;
+  height: 50%;
+  width: 70%;
+  position: absolute;
+  top: 68%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 420px;
+  clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 100%);
+}
+
+.box_two div {
+  font-size: 265%;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  color: white;
+  margin-top: 2%;
+  position: absolute;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.box_two button {
+  border: 1px solid #e100f2;
+  background-color: #70259b;
+  color: white;
+  padding: 8px 30px;
+  font-size: 10px;
+  position: absolute;
+  transform: translate(-70%, 270%);
+}
+
+.box_two .arrow_by_button {
+  transform: translate(30%, 340%);
+}
+
+.box_three {
+  margin-top: 50%;
+}
+
+.box_three .move_cross {
+  position: absolute;
+  top: 170%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.box_three .move_hex {
+  transform: translate(90%, -125%);
+}
+
+.box_three .people {
+  transform: translate(20%, -102%);
+}
+
+.box_three .scribble {
+  transform: translate(20%, -720%);
+}
+
+.box_three .cross_arrow {
+  transform: translate(50%, -300%);
+}
+
+.box_three .text-box {
+  transform: translate(95%, -80%);
+  width: 20%;
+  z-index: 2;
+}
+
+.box_three .text-box .title {
+  font-size: 350%;
+  color: white;
+}
+
+.box_three .text-box p {
+  color: white;
+  font-family: "Gruppo", cursive;
+}
+
+.box_three .text-box button {
+  border: 1px solid #ff00f2;
+  background-color: #201728;
+  color: white;
+  padding: 8px 30px;
+  font-size: 10px;
+  position: absolute;
+  transform: translate(0%, 50%);
+}
+
+.box_three .text-box .arrow_by_button {
+  transform: translate(230%, 130%);
+}
+
+.box_four {
+  height: 100vh;
+  background-color: #6f249b;
+  margin-top: -200px;
+  clip-path: polygon(0 9%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+@media (max-width: 910px) {
+  .top-box {
+    background-image: url(../kjd-assets/hearo-top.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 120vh;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 89%);
+  }
+  .top-box .heading {
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .top-box .move_icon {
+    color: white;
+    margin-left: 96%;
+    margin-top: 1%;
+  }
+  .top-box .white_arrow {
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+  .box_two {
+    background-color: #6f249b;
+    height: 50%;
+    width: 70%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 420px;
+    clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 100%);
+  }
+  .box_two div {
+    font-size: 150%;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    color: white;
+    margin-top: 5%;
+    position: absolute;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .box_two button {
+    border: 1px solid #ff00f2;
+    background-color: #6f249b;
+    color: white;
+    padding: 8px 30px;
+    font-size: 10px;
+    position: absolute;
+    transform: translate(-90%, 270%);
+  }
+  .box_two .arrow_by_button {
+    transform: translate(-10%, 450%);
+  }
+  .box_three {
+    margin-top: 50%;
+  }
+  .box_three .move_cross {
+    position: absolute;
+    top: 160%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+  .box_three .move_hex {
+    transform: translate(70%, 0%);
+    width: 30%;
+    height: 30%;
+  }
+}
+/*# sourceMappingURL=index.css.map */
