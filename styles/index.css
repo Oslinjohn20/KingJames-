@@ -4,10 +4,6 @@ body {
   padding: 0;
 }
 
-button:hover {
-  background-color: white;
-}
-
 .top-box {
   background-image: url("../kjd-assets/hearo-top.jpg");
   background-position: center;
@@ -26,9 +22,10 @@ button:hover {
 }
 
 .top-box .move_icon {
-  color: white;
-  margin-left: 98%;
-  margin-top: 1%;
+  margin-left: 97%;
+  margin-top: 0.5%;
+  width: 30px;
+  height: 30px;
 }
 
 .top-box .white_arrow {
@@ -43,7 +40,7 @@ button:hover {
   height: 50%;
   width: 70%;
   position: absolute;
-  top: 68%;
+  top: 58%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin-top: 420px;
@@ -51,28 +48,44 @@ button:hover {
 }
 
 .box_two div {
-  font-size: 265%;
+  font-size: 205%;
   font-family: "Playfair Display", serif;
   text-align: center;
   color: white;
   margin-top: 2%;
   position: absolute;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .box_two button {
   border: 1px solid #e100f2;
   background-color: #70259b;
   color: white;
-  padding: 8px 30px;
+  padding: 12px 30px;
   font-size: 10px;
   position: absolute;
-  transform: translate(-70%, 270%);
+  transform: translate(-60%, 100%);
+  animation-name: about-btn;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 
 .box_two .arrow_by_button {
-  transform: translate(30%, 340%);
+  transform: translate(80%, 340%);
+}
+
+@keyframes about-btn {
+  from {
+    background-color: #6f249b;
+    border: 2px solid #e11c5b;
+    color: white;
+  }
+  to {
+    background-color: #e11c5b;
+    border: 2px solid #6f249b;
+    color: black;
+  }
 }
 
 .box_three {
@@ -104,9 +117,9 @@ button:hover {
 }
 
 .box_three .text-box {
-  transform: translate(95%, -80%);
+  transform: translate(95%, -55%);
   width: 20%;
-  z-index: 2;
+  z-index: 1;
 }
 
 .box_three .text-box .title {
@@ -116,25 +129,21 @@ button:hover {
 
 .box_three .text-box p {
   color: white;
-  font-family: "Gruppo", cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 .box_three .text-box button {
-  border: 1px solid #ff00f2;
+  border: 2px solid #ff00f2;
   background-color: #201728;
   color: white;
-  padding: 8px 30px;
+  padding: 12px 30px;
   font-size: 10px;
   position: absolute;
   transform: translate(0%, 50%);
 }
 
-.box_three .text-box button:hover {
-  background-color: white;
-}
-
 .box_three .text-box .arrow_by_button {
-  transform: translate(230%, 130%);
+  transform: translate(240%, 190%);
 }
 
 .box_four {
@@ -155,7 +164,7 @@ button:hover {
 }
 
 .box_four .text-box-2 {
-  transform: translate(300%, -50%);
+  transform: translate(300%, -40%);
   width: 20%;
 }
 
@@ -167,27 +176,22 @@ button:hover {
 
 .box_four p {
   color: white;
-  font-family: "Gruppo", cursive;
+  font-family: "Montserrat", sans-serif;
   transform: translate(20%, 10%);
 }
 
 .box_four button {
-  border: 1px solid #ff00f2;
+  border: 2px solid #ff00f2;
   background-color: #6f249b;
   color: white;
-  padding: 8px 30px;
+  padding: 12px 30px;
   font-size: 10px;
   position: absolute;
   transform: translate(50%, 80%);
 }
 
-.box_four button:hover {
-  background-color: white;
-  opacity: 0.3;
-}
-
 .box_four .arrow_by_button {
-  transform: translate(370%, 170%);
+  transform: translate(380%, 250%);
 }
 
 .box_four .arrow_with_cross {
@@ -257,13 +261,13 @@ button:hover {
 
 .box_six .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: 23% 23% 23% 23%;
 }
 
 .box_six .grid-container .grid-item {
-  height: 150px;
+  height: 170px;
   text-align: center;
-  padding: 30px;
+  padding: 20px;
   margin-left: -10px;
   margin-top: 10px;
 }
@@ -280,7 +284,51 @@ button:hover {
   width: 90%;
   text-align: left;
   padding-left: 3%;
-  font-family: "Gruppo", cursive;
+  font-family: "Montserrat", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #007dae;
+  overflow: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: black;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 910px) {
@@ -335,7 +383,7 @@ button:hover {
     border: 1px solid #ff00f2;
     background-color: #6f249b;
     color: white;
-    padding: 8px 30px;
+    padding: 12px 30px;
     font-size: 10px;
     position: absolute;
     transform: translate(-90%, 270%);
@@ -347,19 +395,52 @@ button:hover {
     transform: translate(-10%, 450%);
   }
   .box_three {
-    margin-top: 50%;
+    margin-top: 850px;
   }
   .box_three .move_cross {
     position: absolute;
-    top: 160%;
+    top: 170%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
   }
   .box_three .move_hex {
-    transform: translate(70%, 0%);
-    width: 30%;
-    height: 30%;
+    transform: translate(90%, -125%);
+    width: 50%;
+    height: 50%;
+  }
+  .box_three .people {
+    transform: translate(20%, -102%);
+  }
+  .box_three .scribble {
+    transform: translate(20%, -720%);
+  }
+  .box_three .cross_arrow {
+    transform: translate(50%, -300%);
+  }
+  .box_three .text-box {
+    transform: translate(95%, -80%);
+    width: 20%;
+  }
+  .box_three .text-box .title {
+    font-size: 350%;
+    color: white;
+  }
+  .box_three .text-box p {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+  }
+  .box_three .text-box button {
+    border: 2px solid #e11c5b;
+    background-color: #201728;
+    color: white;
+    padding: 12px 30px;
+    font-size: 10px;
+    position: absolute;
+    transform: translate(0%, 50%);
+  }
+  .box_three .text-box .arrow_by_button {
+    transform: translate(230%, 130%);
   }
   .box_four {
     height: 100vh;

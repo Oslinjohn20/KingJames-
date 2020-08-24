@@ -15,6 +15,10 @@
 			href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+			rel="stylesheet"
+		/>
 		<!-- Google Fonts -->
 		<!-- Personal stylesheet -->
 		<link href="/styles/index.css" rel="stylesheet" />
@@ -24,7 +28,24 @@
 	</head>
 	<!--First Section -->
 	<body>
+		<div id="mySidebar" class="sidebar">
+			<!-- Sidenav -->
+			<a href="#" class="closebtn" onclick="closeNav()">×</a>
+			<a href="#">About</a>
+			<a href="#">Services</a>
+			<a href="#">Clients</a>
+			<a href="#">Contact</a>
+
+			<!-- Sidenav -->
+		</div>
 		<div class="top-box">
+			<img
+				src="./kjd-assets/menu.png"
+				class="move_icon"
+				onclick="openNav()"
+				alt="menu"
+			/>
+
 			<i class="fas fa-bar move_icon"></i>
 			<img class="heading" src="./kjd-assets/kjd-logo.png" alt="logo" />
 
@@ -37,16 +58,18 @@
 		</div>
 		<div class="box_two">
 			<div>
-				We offer an interconnected set of services to help our clients respond
-				to the disruptrions and seize the opportunities of the digital age.
-				<a href="https://www.kingjames.co.za/about">
-					<button type="button">ABOUT US</button>
-				</a>
-				<img
-					src="./kjd-assets/arrow-right.png"
-					alt="arrow"
-					class="arrow_by_button"
-				/>
+				<p>
+					We offer an interconnected set of services to help our clients respond
+					to the disruptrions and seize the opportunities of the digital age.
+					<a href="https://www.kingjames.co.za/about">
+						<button type="button">ABOUT US</button>
+					</a>
+					<img
+						src="./kjd-assets/arrow-right.png"
+						alt="arrow"
+						class="arrow_by_button"
+					/>
+				</p>
 			</div>
 		</div>
 		<div>
@@ -137,6 +160,15 @@
 						/>
 					</a>
 				</div>
+				<div class="grid-item num_three">
+					<h6>LATEST CAREERS</h6>
+					<p>Front end developer Cape Town</p>
+					<img
+						src="./kjd-assets/arrow-right.png"
+						alt="right_arrow"
+						class="third_arrow"
+					/>
+				</div>
 			</div>
 		</div>
 		<footer class="box_six">
@@ -171,5 +203,7 @@
 				</div>
 			</div>
 		</footer>
+
+		<script src="./index.js"></script>
 	</body>
 </html>
