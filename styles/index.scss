@@ -108,39 +108,42 @@ body {
 		position: absolute;
 		top: 170%;
 		left: 50%;
-		transform: translate(-50%, -50%);
+		transform: translate(-50%, -60%);
 		z-index: -1;
 	}
 	// positioning of hexagon image
 	.move_hex {
-		transform: translate(90%, -125%);
+		transform: translate(80%, -135%);
 	}
 	// positioning of the people image
 	.people {
-		transform: translate(20%, -102%);
+		transform: translate(10%, -102%);
+		opacity: 0.8;
 	}
 	// positioning of scribble png
 	.scribble {
-		transform: translate(20%, -720%);
+		transform: translate(-120%, -720%);
 	}
 	// positioning of cross arrow png
 	.cross_arrow {
-		transform: translate(50%, -300%);
+		transform: translate(50%, -200%);
 	}
 	// positioning of text box
 	.text-box {
-		transform: translate(95%, -55%);
+		transform: translate(65%, -55%);
 		width: 20%;
 		z-index: 1;
 		// positioning and styling of title in text box
 		.title {
 			font-size: 350%;
 			color: white;
+			font-weight: 300;
 		}
 		// positioning and styling of p tag in text box
 		p {
 			color: white;
 			font-family: "Montserrat", sans-serif;
+			font-weight: 50;
 		}
 		// positioning and styling of button in text box
 		button {
@@ -177,7 +180,7 @@ body {
 
 	// robot image styling and positioning
 	.robot {
-		transform: translate(30%, 85%);
+		transform: translate(20%, 85%);
 		-webkit-box-shadow: -1px 2px 38px 7px rgba(0, 0, 0, 0.75);
 		-moz-box-shadow: -1px 2px 38px 7px rgba(0, 0, 0, 0.75);
 		box-shadow: -1px 2px 38px 7px rgba(0, 0, 0, 0.75);
@@ -190,9 +193,10 @@ body {
 	}
 	// title next to robot image
 	.title_of_robot {
-		font-size: 312%;
+		font-size: 300%;
+		font-weight: 400;
 		color: white;
-		transform: translate(-20%, 10%);
+		transform: translate(10%, 10%);
 	}
 
 	// paragraph tag styling
@@ -225,7 +229,7 @@ body {
 	// arrow with cross styling
 	.arrow_with_cross {
 		float: right;
-		transform: translate(-2250%, 95%);
+		transform: translate(-2000%, 0%);
 	}
 }
 
@@ -254,6 +258,7 @@ body {
 				text-align: left;
 				padding-left: 3%;
 				font-family: "Gruppo", cursive;
+				
 			}
 			p {
 				color: white;
@@ -270,7 +275,7 @@ body {
 
 			// arrow from first card
 			.first_arrow {
-				transform: translate(370%, 30%);
+				transform: translate(250%, 30%);
 			}
 		}
 
@@ -280,7 +285,7 @@ body {
 
 			// arrow from second card
 			.second_arrow {
-				transform: translate(400%, 300%);
+				transform: translate(350%, 300%);
 			}
 		}
 
@@ -290,7 +295,7 @@ body {
 
 			// arow from third card
 			.third_arrow {
-				transform: translate(400%, 300%);
+				transform: translate(310%, 300%);
 			}
 		}
 	}
