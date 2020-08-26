@@ -7,10 +7,6 @@ body {
 	padding: 0;
 }
 
-// button:hover {
-// 	background-color: white;
-// }
-
 // Top section styling
 .top-box {
 	background-image: url("../kjd-assets/hearo-top.jpg");
@@ -31,8 +27,8 @@ body {
 	.move_icon {
 		margin-left: 97%;
 		margin-top: 0.5%;
-		width: 30px;
-		height: 30px;
+		width: 20px;
+		height: 20px;
 	}
 	// white arrow styling / positioning
 	.white_arrow {
@@ -57,7 +53,7 @@ body {
 
 	// div styling inside box 2
 	div {
-		font-size: 205%;
+		font-size: 203%;
 		font-family: "Playfair Display", serif;
 		text-align: center;
 		color: white;
@@ -69,7 +65,7 @@ body {
 
 	// about us button styling
 	button {
-		border: 1px solid rgb(225, 0, 242);
+		border: 2px solid rgb(225, 0, 242);
 		background-color: $primary-colour;
 		color: white;
 		padding: 12px 30px;
@@ -154,10 +150,11 @@ body {
 			font-size: 10px;
 			position: absolute;
 			transform: translate(0%, 50%);
+			animation-name: about-btn;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
 		}
-		// button:hover {
-		// 	background-color: white;
-		// }
+
 		// positioning and styling of arrow next button in text box
 		.arrow_by_button {
 			transform: translate(240%, 190%);
@@ -215,11 +212,10 @@ body {
 		font-size: 10px;
 		position: absolute;
 		transform: translate(50%, 80%);
+		animation-name: about-btn;
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
 	}
-	// button:hover {
-	// 	background-color: white;
-	// 	opacity: 0.3;
-	// }
 
 	// arrow next to button styling
 	.arrow_by_button {
@@ -258,7 +254,6 @@ body {
 				text-align: left;
 				padding-left: 3%;
 				font-family: "Gruppo", cursive;
-				
 			}
 			p {
 				color: white;
@@ -338,14 +333,16 @@ body {
 .sidebar {
 	height: 100%;
 	width: 0;
-	position: fixed;
+	position: absolute;
 	z-index: 1;
 	top: 0;
 	left: 0;
-	background-color: rgb(0, 125, 174);
+	background-color: $secondary-colour;
 	overflow: hidden;
 	transition: 0.5s;
 	padding-top: 60px;
+	font-family: "Playfair Display", sans-serif;
+	opacity: 0.8;
 	a {
 		padding: 8px 8px 8px 32px;
 		text-decoration: none;
@@ -355,7 +352,7 @@ body {
 		transition: 0.3s;
 	}
 	a:hover {
-		color: black;
+		color: rgb(0, 125, 174);
 	}
 	.closebtn {
 		position: absolute;
@@ -394,8 +391,10 @@ body {
 		}
 		.move_icon {
 			color: white;
-			margin-left: 96%;
+			margin-left: 93%;
 			margin-top: 1%;
+			width: 30px;
+			height: 30px;
 		}
 		.white_arrow {
 			top: 93%;
@@ -409,20 +408,20 @@ body {
 		height: 50%;
 		width: 70%;
 		position: absolute;
-		top: 70%;
+		top: 65%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		margin-top: 420px;
 		clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 100%);
 		div {
-			font-size: 150%;
+			font-size: 147%;
 			font-family: "Playfair Display", serif;
 			text-align: center;
 			color: white;
 			margin-top: 5%;
 			position: absolute;
-			padding-left: 10%;
-			padding-right: 10%;
+			padding-left: 5%;
+			padding-right: 5%;
 		}
 		button {
 			border: 1px solid rgb(255, 0, 242);
@@ -431,45 +430,54 @@ body {
 			padding: 12px 30px;
 			font-size: 10px;
 			position: absolute;
-			transform: translate(-90%, 270%);
+			transform: translate(-100%, 200%);
 		}
 		button:hover {
 			background-color: white;
 		}
 		.arrow_by_button {
-			transform: translate(-10%, 450%);
+			transform: translate(-30%, 490%);
 		}
 	}
 
 	.box_three {
-		margin-top: 850px;
+		margin-top: 800px;
 		.move_cross {
 			position: absolute;
-			top: 170%;
+			top: 160%;
 			left: 50%;
 			transform: translate(-50%, -50%);
 			z-index: -1;
 		}
 		.move_hex {
-			transform: translate(90%, -125%);
+			transform: translate(50%, 70%);
 			width: 50%;
 			height: 50%;
+			margin-top: 50px;
 		}
 		.people {
-			transform: translate(20%, -102%);
+			transform: translate(-50%, -40%);
+			width: 100%;
+			height: 50%;
+			position: absolute;
 		}
 		.scribble {
-			transform: translate(20%, -720%);
+			transform: translate(-100%, -620%);
+			float: right;
 		}
 		.cross_arrow {
-			transform: translate(50%, -300%);
+			position: absolute;
+			transform: translate(-50%, 220%);
 		}
 		.text-box {
-			transform: translate(95%, -80%);
-			width: 20%;
-			// z-index: 2;
+			transform: translate(5%, -400%);
+			text-align: center;
+			padding-left: 5%;
+			padding-right: 5%;
+			width: 80%;
+
 			.title {
-				font-size: 350%;
+				font-size: 200%;
 				color: white;
 			}
 			p {
@@ -483,18 +491,140 @@ body {
 				padding: 12px 30px;
 				font-size: 10px;
 				position: absolute;
-				transform: translate(0%, 50%);
+				transform: translate(-20%, 50%);
 			}
 			.arrow_by_button {
-				transform: translate(230%, 130%);
+				transform: translate(180%, 180%);
 			}
 		}
 	}
 
 	.box_four {
-		height: 100vh;
+		height: 150vh;
 		background-color: rgb(111, 36, 155);
-		margin-top: -200px;
+		margin-top: -100px;
 		clip-path: polygon(0 9%, 100% 0%, 100% 100%, 0% 100%);
+		.circle {
+			width: 250px;
+			height: 250px;
+			transform: translate(60%, -30%);
+		}
+		.robot {
+			transform: translate(0%, 80%);
+			width: 100%;
+			-webkit-box-shadow: -1px 2px 38px 7px rgba(0, 0, 0, 0.75);
+			-moz-box-shadow: -1px 2px 38px 7px rgba(0, 0, 0, 0.75);
+			box-shadow: -1px 2px 38px 7px rgba(0, 0, 0, 0.75);
+		}
+		.text-box-2 {
+			width: 80%;
+			transform: translate(0%, -250%);
+
+			.title_of_robot {
+				font-size: 312%;
+				color: white;
+				transform: translate(25%, 0%);
+			}
+			p {
+				color: white;
+				font-family: "Montserrat", sans-serif;
+				transform: translate(20%, 10%);
+			}
+			button {
+				border: 2px solid rgb(225, 28, 91);
+				background-color: rgb(111, 36, 155);
+				color: white;
+				padding: 12px 30px;
+				font-size: 10px;
+				position: absolute;
+				transform: translate(170%, 80%);
+			}
+			.arrow_by_button {
+				float: right;
+				transform: translate(-100%, 250%);
+			}
+		}
+		.arrow_with_cross {
+			float: right;
+			transform: translate(-2250%, 95%);
+		}
+	}
+
+	.box_five {
+		height: 160vh;
+		background-color: white;
+		.grid-container {
+			grid-template-columns: auto;
+			padding-top: 20px;
+			padding-left: 50px;
+			padding-right: 50px;
+			.grid-item {
+				height: 300px;
+				text-align: center;
+				background-position: center;
+				background-size: cover;
+				h6 {
+					color: rgb(204, 32, 104);
+					text-align: left;
+					padding-top: 5%;
+					padding-left: 3%;
+					font-family: "Gruppo", cursive;
+				}
+				p {
+					color: white;
+					font-size: 250%;
+					width: 90%;
+					text-align: left;
+					padding-left: 3%;
+				}
+			}
+			.num_one {
+				background-image: url(../kjd-assets/bg-square-gradient.png);
+				.first_arrow {
+					transform: translate(370%, -90%);
+				}
+			}
+			.num_two {
+				background-image: url(../kjd-assets/bg-rectangle-gradient.png);
+				margin-top: 10px;
+				.second_arrow {
+					transform: translate(370%, 200%);
+				}
+			}
+			.num_three {
+				background-image: url(../kjd-assets/bg-circle-gradient.png);
+				margin-top: 10px;
+				.third_arrow {
+					transform: translate(370%, 200%);
+				}
+			}
+		}
+	}
+
+	.box_six {
+		.grid-container {
+			grid-template-columns: auto;
+
+			.grid-item {
+				height: 170px;
+				text-align: center;
+				padding: 20px;
+				margin-left: -10px;
+				margin-top: 10px;
+
+				h2 {
+					color: rgb(204, 32, 104);
+					text-align: center;
+				}
+				p {
+					color: white;
+					font-size: 100%;
+
+					text-align: center;
+
+					font-family: system-ui, system-ui, sans-serif;
+				}
+			}
+		}
 	}
 }
